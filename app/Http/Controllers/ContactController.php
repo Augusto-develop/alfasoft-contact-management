@@ -32,7 +32,7 @@ class ContactController extends Controller
     public function store(Request $request)
     {
         $request->validate([
-            'name' => 'required|min:5|unique:contacts',
+            'name' => 'required|min:5',
             'phone' => ['required', 'digits:9', 'unique:contacts,phone'],
             'email' => 'required|email|unique:contacts,email',
         ]);
@@ -65,7 +65,7 @@ class ContactController extends Controller
         $contact = Contact::findOrFail($id);
 
         $request->validate([
-            'name' => 'required|string|max:255',
+            'name' => 'required|string|min:5',
             'phone' => [
                 'required',
                 'digits:9',
