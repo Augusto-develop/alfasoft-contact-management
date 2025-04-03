@@ -5,7 +5,7 @@ export default defineConfig({
     server: {
         https: true,
         host: 'augustogomes-lv.recruitment.alfasoft.pt',
-        port: 5174,
+        port: 5175,
         cors: {
             origin: 'https://augustogomes-lv.recruitment.alfasoft.pt',
             methods: ['GET', 'POST', 'PUT', 'DELETE'],
