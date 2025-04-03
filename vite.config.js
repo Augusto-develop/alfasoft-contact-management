@@ -3,7 +3,7 @@ import laravel from 'laravel-vite-plugin';
 
 export default defineConfig({
     server: {
-        host: 'localhost',
+        host: 'augustogomes-lv.recruitment.alfasoft.pt',
         port: 5173,
         https: true, // Força o Vite a rodar com HTTPS
     },
